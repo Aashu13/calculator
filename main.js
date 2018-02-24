@@ -1,22 +1,16 @@
+var inputBox = document.getElementById("display_number");
+var btns = document.querySelectorAll("button");
 
+for (var i = 0; i <= btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    inputBox.value += this.value;
 
-function calc(x){
-    var inputBox = document.getElementById('displayNumber');
-    inputBox.value += x;
+    document.getElementById("answer").onclick = function() {
+      inputBox.value = eval(inputBox.value);
+    };
 
-    if(x === "CE"){
-
-        inputBox.value = '';
-    }
-};
-
-function answer(){
-
-    var inputBox = document.getElementById('displayNumber');
-   x = inputBox.value;
-   x =  eval(x);
-
-   inputBox.value = x;
-
-
-};
+    document.getElementById("clearNumber").onclick = function() {
+      inputBox.value = "";
+    };
+  });
+}

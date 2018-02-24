@@ -1,99 +1,84 @@
-body{
-    background-image:url(juber.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
-    margin: 0;
-    padding:0;
-    border-size:border-box;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border-size: border-box;
+  background: #000;
 }
 
-
-h1{
-    text-align: center;
-    font-size: 40px;
-    color:green;
-    text-transform: uppercase;
-    font-family: 'Risque', cursive;
-    margin-top: 30px;
-    letter-spacing: 2px;
-
+h2 {
+  text-align: Center;
+  font-size: 70px;
+  color: #ddd;
 }
 
-.wrapper{
-    background:rgba(0,0,0,0.5);
-    width: 20%;
-    max-width: 500px;
-    min-width: 400px;
-    margin: auto;
-    border-radius:20px;
-    position: relative;
-    top:40px;
+.wrapper {
+  width: 100%;
+  position: relative;
+  top: 30px;
 }
 
-
-form{
-    width: 100%;
-    text-align: center;
-    padding: 40px 0 20;
+.container {
+  width: 40%;
+  max-width: 250px;
+  min-width: 300px;
+  margin: auto;
+  padding: 25px 10px 10px 10px;
+  border: 2px solid #fff;
+  border-radius: 10px;
 }
 
-
-form #displayNumber{
-    width:70%;
-    height:60px;
-    padding:20px 10px;
-    border-radius: 5px;
-    border-bottom: 2px solid #ddd;
-    text-align: right;
-    font-size: 30px;
-    font-family: 'Risque', cursive;
-    color: aqua;
-    outline:none;
+.display_num {
+  width: 100%;
+  text-align: center;
 }
 
-form div{
-    padding:15px 10px 10px;
-
+.display_num input {
+  width: 80%;
+  position: relative;
+  padding: 50px 5px 0 0;
+  border: 2px solid #fff;
+  text-align: right;
+  font-size: 40px;
+  outline: none;
 }
 
-form div #keys{
-    width:60px;
-    height:60px;
-    padding:20px;
-    margin: 2px;
-    border:none;   
-    font-size: 20px;
-    color:#fff;
-    outline: none;
-    border-radius:5px;
-    font-weight:bold;
-    background: rgba(0,0,0,0.5);
+.btn_container {
+  width: 100%;
 }
 
-
-form div #total{
-    text-align:center;
-    font-size:20px;
-    width:270px;
-    height:40px;
-    border:none;
-    background: rgba(0,0,0,0.5);
+.btn_container > div {
+  width: 100%;
+  padding: 12px 0;
+  text-align: center;
 }
 
-form div #keys:hover{
-    background: rgba(0,0,0,0.5);
-    color:#000;
-} 
-
-form div #total:hover{
-    background:#ddd;
-    border:1px solid #ddd;
-    cursor: pointer;
+button {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 10px;
+  font-size: 29px;
+  background: none;
+  border: 1px solid #722972;
+  color: #722872;
+  outline: none;
 }
 
+button:hover {
+  color: #ddd;
+  border: 2px solid #ddd;
+  transition: 1s;
+}
 
+#answer {
+  width: 80%;
+  border: 2px solid #72872;
+  border-radius: 0;
+  cursor: pointer;
+}
 
-
-form div #keys:hover{
-    box-shadow: none;
+#answer:hover {
+  border: 2px solid #722872;
+  transition: 1s;
 }
