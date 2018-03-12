@@ -3,13 +3,14 @@ body {
   margin: 0;
   padding: 0;
   border-size: border-box;
-  background: #000;
+  background: #722872;
 }
 
 h2 {
   text-align: Center;
   font-size: 70px;
   color: #ddd;
+  text-shadow: 4px 5px 8px #000;
 }
 
 .wrapper {
@@ -23,8 +24,6 @@ h2 {
   max-width: 250px;
   min-width: 300px;
   margin: auto;
-  padding: 25px 10px 10px 10px;
-  border: 2px solid #fff;
   border-radius: 10px;
 }
 
@@ -34,9 +33,10 @@ h2 {
 }
 
 .display_num input {
-  width: 80%;
+  width: 300px;
+  height: 120px;
   position: relative;
-  padding: 50px 5px 0 0;
+  padding: 30px 5px 0 0;
   border: 2px solid #fff;
   text-align: right;
   font-size: 40px;
@@ -45,40 +45,50 @@ h2 {
 
 .btn_container {
   width: 100%;
+  border: 1px solid #ddd;
+  background: skyblue;
 }
 
 .btn_container > div {
   width: 100%;
-  padding: 12px 0;
+  padding: 5px 0;
   text-align: center;
 }
 
-button {
+.btn_container div button {
   width: 60px;
   height: 60px;
   line-height: 60px;
-  border-radius: 10px;
-  font-size: 29px;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #ee55ee;
   background: none;
-  border: 1px solid #722972;
-  color: #722872;
+  border: none;
   outline: none;
 }
 
-button:hover {
-  color: #ddd;
-  border: 2px solid #ddd;
+#spacial_btn {
+  font-size: 30px;
+  color: green;
+}
+
+#clearNumber {
+  color: red;
+}
+
+.btn_container div button:hover {
+  color: #722872;
+  border: 1px dotted #ee4455;
+  border-size: border-box;
   transition: 1s;
 }
 
 #answer {
   width: 80%;
-  border: 2px solid #72872;
   border-radius: 0;
   cursor: pointer;
 }
-
+/* 
 #answer:hover {
   border: 2px solid #722872;
-  transition: 1s;
-}
+} */
